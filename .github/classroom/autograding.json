@@ -1,13 +1,13 @@
 {
   "tests": [
     {
-      "name": "Test 1",
+      "name": "Runner",
       "setup": "",
-      "run": "make test",
+      "run": "runner.cmd",
       "input": "",
       "output": "",
       "comparison": "exact",
-      "timeout": 10,
+      "timeout": 1,
       "points": 50
     }
   ]
