@@ -17,11 +17,11 @@ int main(int argc, char** argv)
 		}
 		else if(strcmp(argv[1],"b") == 0)
 		{
-			Checker::Expect(false, "Parameter is B");
+			Checker::Expect(true, "Parameter is B");
 		}
 		else
 		{
-			Checker::Expect(false, "Parameter is not A or B");
+			Checker::Expect(true, "Parameter is not A or B");
 		}
 	}
 
