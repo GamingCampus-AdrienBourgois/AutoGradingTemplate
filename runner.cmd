@@ -1,1 +1,1 @@
-.\x64\Release\ConsoleApplication.exe
+.\x64\Release\ConsoleApplication.exe %*
