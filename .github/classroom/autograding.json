@@ -1,32 +1,8 @@
 {
   "tests": [
     {
-      "name": "A",
-      "setup": "",
-      "run": "runner.cmd a",
-      "input": "",
-      "output": "",
-      "comparison": "exact",
-      "timeout": 10,
-      "points": 10
-    },
-    {
-      "name": "B",
-      "setup": "",
-      "run": "runner.cmd b",
-      "input": "",
-      "output": "",
-      "comparison": "exact",
-      "timeout": 10,
-      "points": 10
-    },
-    {
-      "name": "Z",
-      "setup": "",
-      "run": "runner.cmd Z",
-      "input": "",
-      "output": "",
-      "comparison": "exact",
+      "name": "1 1",
+      "run": "x64\\Release\\ConsoleApplication.exe 1 1",
       "timeout": 10,
       "points": 10
     }

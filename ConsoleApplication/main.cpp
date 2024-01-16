@@ -1,29 +1,48 @@
 #include <iostream>
+#include <string>
 
-#include "Checker.h"
+#include "Exercice.h"
+#include "StudentLibrary.h"
+
+#ifdef COMPILE_EXERCICE_1
+#include "Exercice1.h"
+#endif
 
 int main(int argc, char** argv)
 {
-	if(argc <= 1)
+	if (argc <= 1)
 	{
-		std::cout << "No parameter" << "!\n";
+		std::cerr << "No Exercice provided !" << '\n';
+		return -1;
 	}
-	else
+
+	if (argc <= 2)
 	{
-		
-		if(strcmp(argv[1],"a") == 0)
-		{
-			Checker::Expect(true, "Parameter is A");
-		}
-		else if(strcmp(argv[1],"b") == 0)
-		{
-			Checker::Expect(true, "Parameter is B");
-		}
-		else
-		{
-			Checker::Expect(true, "Parameter is not A or B");
-		}
+		std::cerr << "No Test provided !" << '\n';
+		return -1;
 	}
+
+	int exerciceId = std::stoi(argv[1]);
+	int test_id = std::stoi(argv[2]);
+
+	std::cout << "Test : Exercice " << exerciceId << " with test " << test_id << '\n';
+
+	ExerciceBase* exercice = nullptr;
+
+	switch (exerciceId)
+	{
+#ifdef COMPILE_EXERCICE_1
+	case 1:
+		{
+			exercice = new Exercice1();
+			break;
+		}
+#endif
+	default: std::cerr << "Exercice not found or not compiled !" << '\n';
+		return -1;
+	}
+
+	exercice->Check(test_id);
 
 	return 0;
 }
