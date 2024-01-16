@@ -9,7 +9,14 @@ public:
 	{
 		try
 		{
-			return ExecuteTest(_testId);
+			bool result = ExecuteTest(_testId);
+
+			if (result)
+				std::cout << "Test " << _testId << " OK\n";
+			else
+				std::cout << "Test " << _testId << " KO\n";
+
+			return result;
 		}
 		catch (std::exception& _exception)
 		{

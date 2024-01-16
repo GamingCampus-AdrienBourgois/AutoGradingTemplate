@@ -18,6 +18,9 @@
     <ClCompile Include="SolutionExample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Solution1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SolutionExample.h">
@@ -25,6 +28,9 @@
     </ClInclude>
     <ClInclude Include="StudentLibrary.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution1.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

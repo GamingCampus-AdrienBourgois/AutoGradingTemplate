@@ -159,7 +159,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Solution1.cpp" />
     <ClCompile Include="SolutionExample.cpp" />
+    <ClInclude Include="Solution1.h" />
     <ClInclude Include="StudentLibrary.h" />
   </ItemGroup>
   <ItemGroup>

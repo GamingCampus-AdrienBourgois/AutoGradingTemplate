@@ -2,10 +2,15 @@
 #include <string>
 
 #include "Exercice.h"
+
 #include "StudentLibrary.h"
 
 #ifdef COMPILE_EXERCICE_EXAMPLE
 #include "ExerciceExample.h"
+#endif
+
+#ifdef COMPILE_EXERCICE_EXAMPLE
+#include "Exercice1.h"
 #endif
 
 int main(int argc, char** argv)
@@ -35,6 +40,13 @@ int main(int argc, char** argv)
 	case 0:
 		{
 			exercice = new ExerciceExample();
+			break;
+		}
+#endif
+#ifdef COMPILE_EXERCICE_1
+	case 1:
+		{
+			exercice = new Exercice1();
 			break;
 		}
 #endif
