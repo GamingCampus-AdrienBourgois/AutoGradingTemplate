@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Solution1.cpp">
+    <ClCompile Include="SolutionExample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Solution1.h">
+    <ClInclude Include="SolutionExample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StudentLibrary.h">

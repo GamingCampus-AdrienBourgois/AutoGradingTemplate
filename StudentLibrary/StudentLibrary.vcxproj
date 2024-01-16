@@ -159,11 +159,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Solution1.cpp" />
+    <ClCompile Include="SolutionExample.cpp" />
     <ClInclude Include="StudentLibrary.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Solution1.h" />
+    <ClInclude Include="SolutionExample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

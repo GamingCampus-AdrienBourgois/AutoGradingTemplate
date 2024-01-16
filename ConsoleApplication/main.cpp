@@ -4,8 +4,8 @@
 #include "Exercice.h"
 #include "StudentLibrary.h"
 
-#ifdef COMPILE_EXERCICE_1
-#include "Exercice1.h"
+#ifdef COMPILE_EXERCICE_EXAMPLE
+#include "ExerciceExample.h"
 #endif
 
 int main(int argc, char** argv)
@@ -31,10 +31,10 @@ int main(int argc, char** argv)
 
 	switch (exerciceId)
 	{
-#ifdef COMPILE_EXERCICE_1
-	case 1:
+#ifdef COMPILE_EXERCICE_EXAMPLE
+	case 0:
 		{
-			exercice = new Exercice1();
+			exercice = new ExerciceExample();
 			break;
 		}
 #endif

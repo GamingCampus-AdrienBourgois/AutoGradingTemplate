@@ -26,7 +26,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Exercice1.h">
+    <ClInclude Include="ExerciceExample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Exercice.h">

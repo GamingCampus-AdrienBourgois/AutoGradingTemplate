@@ -133,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercice.h" />
-    <ClInclude Include="Exercice1.h" />
+    <ClInclude Include="ExerciceExample.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StudentLibrary\StudentLibrary.vcxproj">
