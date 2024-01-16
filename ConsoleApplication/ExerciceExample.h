@@ -11,9 +11,7 @@ public:
 		switch (_id)
 		{
 		case 0: return SolutionExample::Sum(-1, 1) == 0;
-			break;
 		case 1: return SolutionExample::Sum(10, 20) == 30;
-			break;
 		default: throw std::logic_error("Test not found !");
 		}
 	}
