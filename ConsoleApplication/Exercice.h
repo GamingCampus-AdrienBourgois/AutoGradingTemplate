@@ -15,16 +15,16 @@ public:
 			bool result = ExecuteTest(_testId);
 
 			if (result)
-				std::cout << "-> Result Test " << _testId << " : OK\n";
+				std::cout << "-> Result Test " << _testId << " : OK" << std::endl;
 			else
-				std::cout << "-> Result Test " << _testId << " : FAILURE\n";
+				std::cout << "-> Result Test " << _testId << " : FAILURE" << std::endl;
 
 			return result;
 		}
 		catch (std::exception& _exception)
 		{
-			std::cout << "|!| EXCEPTION DURING TEST" << '\n';
-			std::cout << _exception.what() << '\n';
+			std::cout << "|!| EXCEPTION DURING TEST" << std::endl;
+			std::cout << _exception.what() << std::endl;
 			return false;
 		}
 	}

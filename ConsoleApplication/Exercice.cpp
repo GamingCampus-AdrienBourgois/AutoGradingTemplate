@@ -25,20 +25,20 @@ int ExerciceBase::AutograderMain(int argc, char** argv)
 {
 	if (argc <= 1)
 	{
-		std::cout << "|!| No Exercice provided !" << '\n';
+		std::cout << "|!| No Exercice provided !" << std::endl;
 		return -1;
 	}
 
 	if (argc <= 2)
 	{
-		std::cout << "|!| No Test provided !" << '\n';
+		std::cout << "|!| No Test provided !" << std::endl;
 		return -1;
 	}
 
 	int exerciceId = std::stoi(argv[1]);
 	int testId = std::stoi(argv[2]);
 
-	std::cout << "Autograder : Test Exercice " << exerciceId << " with test " << testId << '\n';
+	std::cout << "Autograder : Test Exercice " << exerciceId << " with test " << testId << std::endl;
 
 	return AutograderRunTest(exerciceId, testId);
 }
@@ -79,7 +79,7 @@ int ExerciceBase::AutograderRunTest(int exerciceId, int testId)
 #endif
 	default:
 		{
-			std::cout << "|!| Exercice not found or not compiled !" << '\n';
+			std::cout << "|!| Exercice not found or not compiled !" << std::endl;
 			return -1;
 		}
 	}

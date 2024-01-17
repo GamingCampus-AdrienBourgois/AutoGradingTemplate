@@ -19,7 +19,7 @@ public:
 		{
 		case 0: return Solution.Compute("1+2") == 3;
 		case 1: return Solution.Compute("3*5") == 15;
-		case 2: return Solution.Compute("150-150") == 3;
+		case 2: return Solution.Compute("150-150") == 0;
 		case 3: return Solution.Compute("12*16") == 192;
 		case 4: return Solution.Compute("20-40") == -20;
 		default: throw std::logic_error("Test not found !");
