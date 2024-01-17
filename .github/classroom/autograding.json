@@ -2,104 +2,87 @@
   "tests": [
     {
       "name": "Example 1",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 0 0",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 0 0 && cd ..\\..",
       "points": 0
     },
     {
       "name": "Example 2",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 0 1",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 0 1 && cd ..\\..",
       "points": 0
     },
-    {
+	{
       "name": "Exercice 1 : Test 1",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 1 0",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 1 0 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 1 : Test 2",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 1 1",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 1 1 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 1 : Test 3",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 1 2",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 1 2 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 1 : Test 4",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 1 3",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 1 3 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 1 : Test 5",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 1 4",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 1 4 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 2 : Test 1",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 2 0",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 2 0 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 2 : Test 2",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 2 1",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 2 1 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 2 : Test 3",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 2 2",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 2 2 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 2 : Test 4",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 2 3",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 2 3 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 2 : Test 5",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 2 4",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 2 4 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 3 : Test 1",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 3 0",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 3 0 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 3 : Test 2",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 3 1",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 3 1 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 3 : Test 3",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 3 2",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 3 2 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 3 : Test 4",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 3 3",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 3 3 && cd ..\\..",
       "points": 10
     },
-    {
+	{
       "name": "Exercice 3 : Test 5",
-      "setup": "cd x64\\Autograding",
-      "run": "ConsoleApplication.exe 3 4",
+      "run": "cd x64\\Autograding && ConsoleApplication.exe 3 4 && cd ..\\..",
       "points": 10
     }
   ]
