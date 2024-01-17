@@ -3,14 +3,22 @@
 
 #include "Exercice.h"
 
-#include "StudentLibrary.h"
+#include "CompilationList.h"
 
 #ifdef COMPILE_EXERCICE_EXAMPLE
 #include "ExerciceExample.h"
 #endif
 
-#ifdef COMPILE_EXERCICE_EXAMPLE
+#ifdef COMPILE_EXERCICE_1
 #include "Exercice1.h"
+#endif
+
+#ifdef COMPILE_EXERCICE_2
+#include "Exercice2.h"
+#endif
+
+#ifdef COMPILE_EXERCICE_3
+#include "Exercice3.h"
 #endif
 
 int main(int argc, char** argv)
@@ -50,11 +58,23 @@ int main(int argc, char** argv)
 			break;
 		}
 #endif
+#ifdef COMPILE_EXERCICE_2
+	case 2:
+		{
+			exercice = new Exercice2();
+			break;
+		}
+#endif
+#ifdef COMPILE_EXERCICE_3
+	case 3:
+		{
+			exercice = new Exercice3();
+			break;
+		}
+#endif
 	default: std::cerr << "Exercice not found or not compiled !" << '\n';
 		return -1;
 	}
 
-	exercice->Check(test_id);
-
-	return 0;
+	return exercice->Check(test_id);
 }

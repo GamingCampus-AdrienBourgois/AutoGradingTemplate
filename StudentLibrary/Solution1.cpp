@@ -2,7 +2,7 @@
 
 #include <exception>
 
-bool Solution1::isEven(int n) const
+void Solution1::SortNumbers()
 {
-	throw std::exception("Not implemented yet");
+	throw std::exception("TODO: SortNumbers");
 }

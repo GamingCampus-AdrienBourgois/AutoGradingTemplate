@@ -21,16 +21,31 @@
     <ClCompile Include="Solution1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Solution2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SolutionExample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StudentLibrary.h">
+    <ClInclude Include="CompilationList.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Solution1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Solution2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="listing.csv" />
   </ItemGroup>
 </Project>
