@@ -23,7 +23,7 @@ public:
 		}
 		catch (std::exception& _exception)
 		{
-			std::cout << "|!| EXCEPTION DURING TEST" << std::endl;
+			std::cout << "/!\\ EXCEPTION DURING TEST" << std::endl;
 			std::cout << _exception.what() << std::endl;
 			return false;
 		}

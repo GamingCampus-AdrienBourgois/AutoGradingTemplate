@@ -1,3 +1,4 @@
+#include <filesystem>
 #include <iostream>
 #include <string>
 
@@ -25,13 +26,13 @@ int ExerciceBase::AutograderMain(int argc, char** argv)
 {
 	if (argc <= 1)
 	{
-		std::cout << "|!| No Exercice provided !" << std::endl;
+		std::cout << "/!\\ No Exercice provided !" << std::endl;
 		return -1;
 	}
 
 	if (argc <= 2)
 	{
-		std::cout << "|!| No Test provided !" << std::endl;
+		std::cout << "/!\\ No Test provided !" << std::endl;
 		return -1;
 	}
 
@@ -45,6 +46,8 @@ int ExerciceBase::AutograderMain(int argc, char** argv)
 
 int ExerciceBase::AutograderRunTest(int exerciceId, int testId)
 {
+	std::cout << "Working Directory : " << std::filesystem::current_path() << std::endl;
+
 	ExerciceBase* exercice = nullptr;
 
 	switch (exerciceId)
@@ -79,7 +82,7 @@ int ExerciceBase::AutograderRunTest(int exerciceId, int testId)
 #endif
 	default:
 		{
-			std::cout << "|!| Exercice not found or not compiled !" << std::endl;
+			std::cout << "/!\\ Exercice not found or not compiled !" << std::endl;
 			return -1;
 		}
 	}
