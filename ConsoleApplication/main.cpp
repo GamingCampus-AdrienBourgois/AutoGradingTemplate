@@ -72,8 +72,11 @@ int main(int argc, char** argv)
 			break;
 		}
 #endif
-	default: std::cerr << "Exercice not found or not compiled !" << '\n';
-		return -1;
+	default:
+		{
+			std::cerr << "Exercice not found or not compiled !" << '\n';
+			return -1;
+		}
 	}
 
 	return exercice->Check(test_id);
