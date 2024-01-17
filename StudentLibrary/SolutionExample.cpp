@@ -1,4 +1,4 @@
-#include "CompilationList.h"
+#include "StudentConfiguration.h"
 
 #ifdef COMPILE_EXERCICE_EXAMPLE
 

@@ -5,6 +5,8 @@
 class ExerciceBase
 {
 public:
+	static int MainCheck(int argc, char** argv);
+
 	bool Check(int _testId)
 	{
 		try
@@ -12,15 +14,15 @@ public:
 			bool result = ExecuteTest(_testId);
 
 			if (result)
-				std::cout << "Test " << _testId << " OK\n";
+				std::cout << "-> Result Test " << _testId << " : OK\n";
 			else
-				std::cout << "Test " << _testId << " KO\n";
+				std::cout << "-> Result Test " << _testId << " : FAILURE\n";
 
 			return result;
 		}
 		catch (std::exception& _exception)
 		{
-			std::cerr << _exception.what() << '\n';
+			std::cout << _exception.what() << '\n';
 			return false;
 		}
 	}

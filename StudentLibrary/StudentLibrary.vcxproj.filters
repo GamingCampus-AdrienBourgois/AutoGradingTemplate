@@ -32,7 +32,7 @@
     <ClInclude Include="SolutionExample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CompilationList.h">
+    <ClInclude Include="StudentConfiguration.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Solution1.h">

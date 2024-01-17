@@ -9,12 +9,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentLibrary", "StudentLi
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Autograding|x64 = Autograding|x64
+		Autograding|x86 = Autograding|x86
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Autograding|x64.ActiveCfg = Autograding|x64
+		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Autograding|x64.Build.0 = Autograding|x64
+		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Autograding|x86.ActiveCfg = Autograding|Win32
+		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Autograding|x86.Build.0 = Autograding|Win32
 		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Debug|x64.ActiveCfg = Debug|x64
 		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Debug|x64.Build.0 = Debug|x64
 		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Debug|x86.ActiveCfg = Debug|Win32
@@ -23,6 +29,10 @@ Global
 		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Release|x64.Build.0 = Release|x64
 		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Release|x86.ActiveCfg = Release|Win32
 		{7EBE2439-8905-4B57-9611-6B6F11BA85F5}.Release|x86.Build.0 = Release|Win32
+		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Autograding|x64.ActiveCfg = Autograding|x64
+		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Autograding|x64.Build.0 = Autograding|x64
+		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Autograding|x86.ActiveCfg = Autograding|Win32
+		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Autograding|x86.Build.0 = Autograding|Win32
 		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Debug|x64.ActiveCfg = Debug|x64
 		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Debug|x64.Build.0 = Debug|x64
 		{8192BCB6-5A69-4D8B-B507-CCF9E0D5CC3B}.Debug|x86.ActiveCfg = Debug|Win32
