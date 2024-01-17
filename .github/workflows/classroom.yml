@@ -6,7 +6,7 @@ on:
 
 env:
   SOLUTION_FILE_PATH: .
-  BUILD_CONFIGURATION: Release
+  BUILD_CONFIGURATION: Autograding
 
 permissions:
   checks: write
