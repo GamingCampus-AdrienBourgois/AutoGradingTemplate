@@ -4,5 +4,7 @@
 class Solution2
 {
 public:
-	int Compute(std::string input) const;
+	int Compute(const std::string& input) const;
+
+	int stringCalculator(const std::string& input) const;
 };
