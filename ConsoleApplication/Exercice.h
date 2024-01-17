@@ -5,7 +5,8 @@
 class ExerciceBase
 {
 public:
-	static int MainCheck(int argc, char** argv);
+	static int AutograderMain(int argc, char** argv);
+	static int AutograderRunTest(int exerciceId, int testId);
 
 	bool Check(int _testId)
 	{
@@ -22,6 +23,7 @@ public:
 		}
 		catch (std::exception& _exception)
 		{
+			std::cout << "|!| EXCEPTION DURING TEST" << '\n';
 			std::cout << _exception.what() << '\n';
 			return false;
 		}

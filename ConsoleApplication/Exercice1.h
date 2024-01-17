@@ -34,7 +34,8 @@ public:
 
 	bool CheckVectorOrder(const std::vector<int>& _numbers) const
 	{
-		for (size_t i = 0; i < _numbers.size() - 1; i++)
+		int vectorSize = static_cast<int>(_numbers.size());
+		for (int i = 0; i < vectorSize - 1; i++)
 		{
 			if (_numbers[i] > _numbers[i + 1])
 				return false;

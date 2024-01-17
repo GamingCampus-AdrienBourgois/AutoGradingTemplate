@@ -21,25 +21,30 @@
 #include "Exercice3.h"
 #endif
 
-int ExerciceBase::MainCheck(int argc, char** argv)
+int ExerciceBase::AutograderMain(int argc, char** argv)
 {
 	if (argc <= 1)
 	{
-		std::cout << "No Exercice provided !" << '\n';
+		std::cout << "|!| No Exercice provided !" << '\n';
 		return -1;
 	}
 
 	if (argc <= 2)
 	{
-		std::cout << "No Test provided !" << '\n';
+		std::cout << "|!| No Test provided !" << '\n';
 		return -1;
 	}
 
 	int exerciceId = std::stoi(argv[1]);
-	int test_id = std::stoi(argv[2]);
+	int testId = std::stoi(argv[2]);
 
-	std::cout << "Test : Exercice " << exerciceId << " with test " << test_id << '\n';
+	std::cout << "Autograder : Test Exercice " << exerciceId << " with test " << testId << '\n';
 
+	return AutograderRunTest(exerciceId, testId);
+}
+
+int ExerciceBase::AutograderRunTest(int exerciceId, int testId)
+{
 	ExerciceBase* exercice = nullptr;
 
 	switch (exerciceId)
@@ -74,12 +79,12 @@ int ExerciceBase::MainCheck(int argc, char** argv)
 #endif
 	default:
 		{
-			std::cout << "Exercice not found or not compiled !" << '\n';
+			std::cout << "|!| Exercice not found or not compiled !" << '\n';
 			return -1;
 		}
 	}
 
-	if (exercice->Check(test_id))
+	if (exercice->Check(testId))
 		return 0;
 
 	return -1;

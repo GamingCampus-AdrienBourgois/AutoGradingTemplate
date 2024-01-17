@@ -1,8 +1,8 @@
 #include "Solution1.h"
 
-#include <exception>
+#include <algorithm>
 
 void Solution1::SortNumbers()
 {
-	throw std::exception("TODO: SortNumbers");
+	std::sort(numbers.begin(), numbers.end());
 }
