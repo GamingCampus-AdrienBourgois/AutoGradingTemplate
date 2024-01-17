@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include <vector>
 
 class Solution3
 {
@@ -17,26 +16,16 @@ public:
 
 	std::string GetMailOf(std::string name)
 	{
-		std::vector<Person> persons = readCSV("listing.csv");
-		auto [personName, age, mail, city] = findPerson(persons, name);
-		return mail;
+		return "Unknown";
 	}
 
 	int GetAgeOf(std::string name)
 	{
-		std::vector<Person> persons = readCSV("listing.csv");
-		auto [personName, age, mail, city] = findPerson(persons, name);
-		return age;
+		return 0;
 	}
 
 	std::string GetCityOf(std::string name)
 	{
-		std::vector<Person> persons = readCSV("listing.csv");
-		auto [personName, age, mail, city] = findPerson(persons, name);
-		return city;
+		return "Unknown";
 	}
-
-	std::vector<Person> readCSV(const std::string& filename) const;
-
-	Person findPerson(const std::vector<Person>& directory, const std::string& fullName) const;
 };

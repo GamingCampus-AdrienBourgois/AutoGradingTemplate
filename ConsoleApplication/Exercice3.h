@@ -25,7 +25,7 @@ public:
 				Solution.GetAgeOf("TracyHebert");
 				return false;
 			}
-			catch (std::exception& _exception)
+			catch ([[maybe_unused]] std::exception& _exception)
 			{
 				return true;
 			}

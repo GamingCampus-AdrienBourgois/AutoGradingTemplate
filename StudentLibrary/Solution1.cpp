@@ -2,7 +2,4 @@
 
 #include <algorithm>
 
-void Solution1::SortNumbers()
-{
-	std::sort(numbers.begin(), numbers.end());
-}
+void Solution1::SortNumbers() {}
