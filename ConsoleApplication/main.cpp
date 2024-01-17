@@ -79,5 +79,8 @@ int main(int argc, char** argv)
 		}
 	}
 
-	return exercice->Check(test_id);
+	if (exercice->Check(test_id))
+		return 0;
+
+	return -1;
 }
