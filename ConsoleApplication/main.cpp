@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 
 	// You can use this function to test a specific exercice, for example exercice 1 test 1
 	// You can test multiple exercices by calling multiple times the function AutograderRunTest
-	ExerciceBase::AutograderRunTest(1, 2);
+	return ExerciceBase::AutograderRunTest(1, 2);
 
 	/*------------------ STUDENT MAIN ------------------*/
 
