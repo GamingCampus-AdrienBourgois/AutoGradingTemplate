@@ -45,7 +45,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <CopyFileToFolders Include="listing.csv" />
-  </ItemGroup>
 </Project>

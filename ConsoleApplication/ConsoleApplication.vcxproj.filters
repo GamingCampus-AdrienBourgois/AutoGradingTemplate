@@ -39,4 +39,13 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="BankAccount\784512.txt" />
+    <Text Include="BankAccount\846326.txt" />
+    <Text Include="BankAccount\859314.txt" />
+    <Text Include="BankAccount\968521.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="BankAccount\159874.txt" />
+  </ItemGroup>
 </Project>

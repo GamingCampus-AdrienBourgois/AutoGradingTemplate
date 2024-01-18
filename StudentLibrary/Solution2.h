@@ -1,8 +1,15 @@
 #pragma once
+
+// Don't fortget to enable the exercise in the SudentConfiguration.h file !
 #include <string>
 
-class Solution2
+#include "StudentConfiguration.h"
+#ifdef COMPILE_EXERCICE_2
+
+class Solution2 // Bank Account
 {
 public:
-	int Compute(const std::string& input) const;
+	static float GetBalance(const std::string& accountName);
 };
+
+#endif

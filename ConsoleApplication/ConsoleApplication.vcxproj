@@ -51,7 +51,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -71,7 +71,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -137,6 +137,8 @@
       <PreprocessorDefinitions>AUTOGRADING;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Full</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -184,6 +186,8 @@
       <PreprocessorDefinitions>AUTOGRADING;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Full</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -207,6 +211,48 @@
     <ProjectReference Include="..\StudentLibrary\StudentLibrary.vcxproj">
       <Project>{8192bcb6-5a69-4d8b-b507-ccf9e0d5cc3b}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="BankAccount\159874.txt">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/BankAccount</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="BankAccount\784512.txt">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/BankAccount</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="BankAccount\846326.txt">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/BankAccount</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="BankAccount\859314.txt">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/BankAccount</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="BankAccount\968521.txt">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Autograding|x64'">$(OutDir)/BankAccount</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/BankAccount</DestinationFolders>
+    </CopyFileToFolders>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
