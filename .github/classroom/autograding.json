@@ -11,52 +11,52 @@
       "points": 0
     },
 	{
-      "name": "Exercice 1 : Test 1",
+      "name": "Exercice 1 : Temperature Converter Test 0 : K->C",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 1 0 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 1 : Test 2",
+      "name": "Exercice 1 : Temperature Converter Test 1 : K->F",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 1 1 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 1 : Test 3",
+      "name": "Exercice 1 : Temperature Converter Test 2 : C->K",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 1 2 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 1 : Test 4",
+      "name": "Exercice 1 : Temperature Converter Test 3 : C->C",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 1 3 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 1 : Test 5",
+      "name": "Exercice 1 : Temperature Converter Test 4 : F->C",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 1 4 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 2 : Test 1",
+      "name": "Exercice 2 : Bank Account Test 0 : Account 159874",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 2 0 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 2 : Test 2",
+      "name": "Exercice 2 : Bank Account Test 1 : Account 784512",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 2 1 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 2 : Test 3",
+      "name": "Exercice 2 : Bank Account Test 2 : Account 846326",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 2 2 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 2 : Test 4",
+      "name": "Exercice 2 : Bank Account Test 3 : Account does not exist",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 2 3 && cd ..\\..",
       "points": 10
     },
 	{
-      "name": "Exercice 2 : Test 5",
+      "name": "Exercice 2 : Bank Account Test 4 : Account 968521",
       "run": "cd x64\\Autograding && ConsoleApplication.exe 2 4 && cd ..\\..",
       "points": 10
     },
