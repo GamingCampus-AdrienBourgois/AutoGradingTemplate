@@ -14,7 +14,7 @@
  * You must provide a solution that will read the file and compute the balance of the account.
  * Two types of operations are available : DEPOSIT (+) and WITHDRAW (-).
  *
- * During compilation, each BankAccount.txt will be copied to the build folder, next to the .exe. To open the file, simply use the "XXXXXX.txt" file path without "BankAccount/".
+ * During compilation, each BankAccount.txt will be copied to the build folder inside the "BankAccount" folder, next to the .exe. To open the file, simply use the "BankAccount/XXXXXX.txt" file path.
  * If the file is not found, the program must throw an exception.
  */
 

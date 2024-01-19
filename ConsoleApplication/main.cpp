@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Exercice.h"
 
 #ifndef AUTOGRADING
@@ -8,6 +9,9 @@ int main(int argc, char** argv)
 {
 #ifndef AUTOGRADING
 
+	std::cout << "Local test" << std::endl;
+
+	/*------------ !!! Don't touch above !!! ------------*/
 	/*------------------ STUDENT MAIN ------------------*/
 
 	// This is the main function for the student
@@ -23,6 +27,7 @@ int main(int argc, char** argv)
 	return 0;
 
 	/*------------------ STUDENT MAIN ------------------*/
+	/*------------ !!! Don't touch after !!! ------------*/
 
 #else
 	// Cette ligne permet de lancer les tests pour la moulinette
