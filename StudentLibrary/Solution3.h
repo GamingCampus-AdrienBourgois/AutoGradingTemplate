@@ -1,31 +1,22 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
-class Solution3
+#include "StudentConfiguration.h"
+// Don't forget to enable the exercise in the SudentConfiguration.h file !
+#ifdef COMPILE_EXERCICE_3
+
+class Solution3 // Alphabetical Word Sorter
 {
 public:
-	class Person
-	{
-	public:
-		std::string name;
-		int age;
-		std::string mail;
-		std::string city;
-	};
+	void SetWords(const std::vector<std::string>& _words);
+	void SortWords();
+	std::vector<std::string> GetSortedWords() const;
+	static bool CaseInsensitiveCompare(const std::string& a, const std::string& b);
 
-	std::string GetMailOf(std::string name)
-	{
-		return "Unknown";
-	}
-
-	int GetAgeOf(std::string name)
-	{
-		return 0;
-	}
-
-	std::string GetCityOf(std::string name)
-	{
-		return "Unknown";
-	}
+private:
+	std::vector<std::string> words;
 };
+
+#endif

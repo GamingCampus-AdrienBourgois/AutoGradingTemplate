@@ -21,28 +21,28 @@ Si vous voulez tester votre code, le fichier `main.cpp` pourra vous aider à exe
 - Pour activer la compilation d'un exercice, il faudra décommenter la macro dans le fichier `CompilationList.h` correspondant à l'exercice, cela permettra de ne pas compiler certains exercices, et donc d'éviter que l'intégralité du projet ne compile pas, empêchant les tests pourtant bons de s'effectuer (pour rappel pas de compilation, pas de programme !) Par exemple pour le premier exercice il faudra décommenter `#define COMPILE_EXERCICE_1` (enlever les `//`)
 - Chaque push déclenchera un processus d'autoévaluation via GitHub Actions.
 
-Il est possible de consulter les résultats de votre évaluation en accédant à GitHub Actions.
+- **Il est possible de consulter les résultats de votre évaluation en accédant à GitHub Actions.**
 ![ActionButton](Images/ActionButton.png)
 
-Vous pourrez avoir alors un résultat de test pour chacun de vos commits. Une marque rouge signifie que vous n'avez pas l'intégralité des tests réussis sur l'intégralité de l'examen, donc pas d'inquiétudes
-![TestsTesults](Images/TestsResult.png)
+- **Vous pourrez avoir alors un résultat de test pour chacun de vos commits. Une marque rouge signifie que vous n'avez pas l'intégralité des tests réussis sur l'intégralité de l'examen, donc pas d'inquiétudes**
+![TestsTesults](Images/TestsResults.png)
 
-Vous pouvez voir le temps de compilation ainsi que la note actuelle et cliquer sur Autograding pour les logs
+- **Vous pouvez voir le temps de compilation ainsi que la note actuelle et cliquer sur Autograding pour les logs**
 ![AutogradingResult](Images/AutogradingResult.png)
 
-Vous pouvez également voir les logs de compilations
+- **Vous pouvez également voir les logs de compilations**
 ![TestsLogs](Images/TestsLogs.png)
 
-Chaque test indiquera ou non sa réussite
+- **Chaque test indiquera ou non sa réussite**
 ![Logs](Images/Logs.png)
 
 ## Instructions Générales
 
 - Lisez attentivement chaque exercice dans **ConsoleApplication**.
 - Implémentez vos solutions dans les classes correspondantes dans **StudentLibrary**.
-- Assurez-vous de tester votre code et d'activer la compilation de l'exercice avant de le pousser.
+- Assurez vous de tester votre code et d'activer la compilation de l'exercice avant de le push.
 - Un `ExerciceExample` est donné pour s'assurer de la compilation et de l'éxecution des tests, il ne fournira bien sûr aucun point.
 
-## Bonne Chance!
+## Bonne Chance !
 
-Je vous souhaite bonne chance et espére que vous trouverez ce test à la fois stimulant et agréable. N'hésitez pas à pousser votre code fréquemment pour bénéficier des retours continus de l'autoévaluation.
+Je vous souhaite bonne chance et espère que vous trouverez ce test à la fois stimulant et agréable. N'hésitez pas à push votre code fréquemment pour bénéficier des retours continus de l'autoévaluation.

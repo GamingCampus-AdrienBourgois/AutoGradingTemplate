@@ -1,13 +1,20 @@
 #pragma once
 #include "Exercice.h"
 
+// Don't fortget to enable the exercise in the SudentConfiguration.h file !
+#include "StudentConfiguration.h"
+#ifdef COMPILE_EXERCICE_3
+
 #include "Solution3.h"
 
 /*
- * Exercice 3 : Annuaire
- * Vous avez à disposition un fichier CSV contenant une liste de prénoms et de noms de famille, avec leur mail, ville et age.
- * Grâce à une fonction, vous devez pouvoir récupérer les informations d'une personne en particulier.
- * En input vous aurez alors le prénom et le nom de la personne recherchée. Si la personne n'est pas dans l'annuaire, vous devez retourner une exception.
+ * Exercice 3 : Alphabetical Word Sorter
+ *
+ * This exercise is designed to create a program that sorts a list of words in alphabetical order.
+ * As an input, a vector of words is given. You must store the words, sort the words in alphabetical order and then return the sorted list.
+ * The programm should sort them in alphabetical order, regardless of their original case. It means that "Hello" and "hello" should be considered as the same word.
+ *
+ * If the vector is null or empty, the program must throw an exception.
  */
 
 class Exercice3 : public Exercice<Solution3>
@@ -17,20 +24,36 @@ public:
 	{
 		switch (_id)
 		{
-		case 0: return Solution.GetAgeOf("Michael Sanders") == 41;
-		case 1: return Solution.GetCityOf("David Zimmerman") == "Lake James";
-		case 2: return Solution.GetMailOf("Dr. Todd Douglas") == "amy56@hotmail.com";
-		case 3: try
+		case 0: return Test(Set1, 0, "A");
+		case 1: return Test(Set2, 0, "agency");
+		case 2:
 			{
-				Solution.GetAgeOf("TracyHebert");
-				return false;
+				try
+				{
+					Test(Set3, 0, "A");
+					return false;
+				}
+				catch (const std::exception&)
+				{
+					return true;
+				}
 			}
-			catch ([[maybe_unused]] std::exception& _exception)
-			{
-				return true;
-			}
-		case 4: return Solution.GetCityOf("Mark Thompson") == "South Meghan";
+		case 3: return Test(Set1, 5, "World");
+		case 4: return Test(Set2, 15, "Raise");
 		default: throw std::logic_error("Test not found !");
 		}
 	}
+
+	bool Test(const std::vector<std::string>& _wordsSet, int _wordId, const std::string& _wordToTest)
+	{
+		Solution.SetWords(_wordsSet);
+		Solution.SortWords();
+		return Solution.GetSortedWords().at(_wordId) == _wordToTest;
+	}
+
+	std::vector<std::string> Set1 = {"Hello", "World", "This", "Is", "A", "Test"};
+	std::vector<std::string> Set2 = {"prepare", "big", "Baby", "during", "article", "Left", "community", "war", "choice", "ten", "doctor", "main", "trouble", "involve", "main", "part", "area", "agency", "Water", "Raise"};
+	std::vector<std::string> Set3 = {};
 };
+
+#endif

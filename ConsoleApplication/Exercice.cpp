@@ -82,7 +82,7 @@ int ExerciceBase::AutograderRunTest(int exerciceId, int testId)
 #endif
 	default:
 		{
-			std::cout << "/!\\ Exercice not found or not compiled !" << std::endl;
+			std::cout << "/!\\ Exercice not found or not compiled ! Did you forget to enable the #COMPILE_EXERCICE_X ?" << std::endl;
 			return -1;
 		}
 	}

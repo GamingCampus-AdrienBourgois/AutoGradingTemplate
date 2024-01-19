@@ -1,6 +1,6 @@
 #pragma once
 
-// Don't fortget to enable the exercise in the SudentConfiguration.h file !
+// Don't forget to enable the exercise in the SudentConfiguration.h file !
 #include "StudentConfiguration.h"
 #ifdef COMPILE_EXERCICE_1
 

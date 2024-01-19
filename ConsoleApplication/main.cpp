@@ -11,26 +11,26 @@ int main(int argc, char** argv)
 
 	std::cout << "Local test" << std::endl;
 
-	/*------------ !!! Don't touch above !!! ------------*/
-	/*------------------ STUDENT MAIN ------------------*/
+	/*------------------------------ !!! Don't touch above !!! ------------------------------*/
+	/*------------------------------------ STUDENT MAIN ------------------------------------*/
 
 	// This is the main function for the student
 
 	// You can use this function to test a specific exercice, for example exercice 1 test 1
 	// You can test multiple exercices by calling multiple times the function AutograderRunTest
-	ExerciceBase::AutograderRunTest(2, 0);
-	ExerciceBase::AutograderRunTest(2, 1);
-	ExerciceBase::AutograderRunTest(2, 2);
-	ExerciceBase::AutograderRunTest(2, 3);
-	ExerciceBase::AutograderRunTest(2, 4);
+	ExerciceBase::AutograderRunTest(3, 0);
+	ExerciceBase::AutograderRunTest(3, 1);
+	ExerciceBase::AutograderRunTest(3, 2);
+	ExerciceBase::AutograderRunTest(3, 3);
+	ExerciceBase::AutograderRunTest(3, 4);
 
 	return 0;
 
-	/*------------------ STUDENT MAIN ------------------*/
-	/*------------ !!! Don't touch after !!! ------------*/
+	/*------------------------------------ STUDENT MAIN ------------------------------------*/
+	/*------------------------------ !!! Don't touch after !!! ------------------------------*/
 
 #else
-	// Cette ligne permet de lancer les tests pour la moulinette
+	// This line is used by the autograder, don't touch it !
 	return ExerciceBase::AutograderMain(argc, argv);
 #endif
 }
